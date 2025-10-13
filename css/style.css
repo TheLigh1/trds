@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Roboto Slab", serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81rem;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover{
+    background-color: #fff;
+    color: #C1121F;
+    transition: 1.3s;
+}
+
+h1,h2,h3,h5,h6{
+    font-weight: 900;
+    color: #000;
+    transition: 0.6s ease;
+    z-index: 2;
+}
+
+h1:hover{
+    transform: scale(1.1);
+    cursor: default;
+
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background-color: #fff;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p{
+    margin-bottom: 40px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content{
+    padding: 40px 0;
+    background-color: #bebebe;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+}
+
+section.module.parallax-1{
+    background-image: url(https://nutritotal.com.br/pro/wp-content/uploads/2017/05/tratamento-de-hipertensao-arterial-1024x410.png);
+}
+
+section.module.parallax-2{
+    background-image: url(https://fesaude-bucket.s3.amazonaws.com/black_doctor_checking_measuring_pressure_pregnant_patient_copiar_39dab5ba7f.jpg)
+}
+
+section.module.parallax-3{
+    background-image: url(https://www.mdsaude.com/wp-content/uploads/hipertensao-risco-1200x678.jpg)
+}
+
+section.module.parallax h1{
+    color: #fff;
+    text-align: center;
+    font-size: 80px;    
+}
+
+#supportButton {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transition: 0.2s ease;
+}
+
+#supportButton:hover {
+  background-color: #ffffff;
+  color: #C1121F;
+  transform: scale(1.1);
+}
+
+#supportChat {
+  position: fixed;
+  bottom: 80px;
+  left: 25px;
+  width: 300px;
+  background-color: #ffffff;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  display: none;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+#supportChat .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #C1121F;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+
+}
+
+#supportChat textarea {
+  width: 90%;
+  margin: 10px auto;
+  height: 60px;
+  border-radius: 8px;
+  border: none;
+  padding: 8px;
+  resize: none;
+  font-family: sans-serif;
+}
+
+#supportChat .sendBtn {
+  margin: 0 10px 10px 10px;
+  background-color: #585858;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#supportChat .sendBtn:hover {
+  background-color: #C1121F;
+  transform: scale(1.02);
+}
+
+#closeChat {
+  border-radius: 20px;
+  color: #585858;
+}
+
+#closeChat:hover{
+  transform: scale(1.02);
+  color: #C1121F;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+  z-index: 99;
+}
+
+.social-icons .icon {
+  font-size: 30px;
+  color: white !important;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.2);
+}
+
+.social-icons .whatsapp:hover {
+  color: #25D366 !important;
+}
+
+.social-icons .instagram:hover {
+  color: #E1306C !important;
+}
+
+.teams:hover {
+  color: #464EB8 !important;
+}
+
+.menu-btn {
+  cursor: pointer;
+  width: 35px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1001;
+  position: relative;
+}
+
+.bar {
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.menu-btn.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.menu-btn.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(-6px, 3px);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  transition: left 0.4s ease;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  padding: 0;
+  margin-top: 80px;
+  padding-right: 30px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.sidebar li a:hover {
+  color: #C1121F;
+  letter-spacing: 1px;
+}
+
+.sidebar, .menu-btn {
+  position: fixed;
+}
