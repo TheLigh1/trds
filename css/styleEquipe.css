@@ -50,11 +50,13 @@ header ul li a:hover{
     transition: 1.3s;
 }
 
-h1,h2,h3,h5,h6{
+/*---------------------------------*/
+
+h1{
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
     font-weight: 900;
-    color: #000;
     transition: 0.6s ease;
     z-index: 2;
 }
@@ -65,22 +67,20 @@ h1:hover{
 
 }
 
-.wrapper{
-    width: 100%;
-    margin: 0 auto;
+h2{
+    
+    font-weight: 400;
+    color: #fff;
+    transition: 0.5s ease;
+    z-index: 7537;
 }
 
-main{
-    display: block;
-    background-color: #fff;
+h2:hover{
+    transform: scale(1.01);
+    cursor: default;
+    color: #C1121F;
 }
 
-.container{
-    width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
 section.module p{
     margin-bottom: 40px;
@@ -127,21 +127,13 @@ section.module.parallax-1{
     background-image: url(https://nutritotal.com.br/pro/wp-content/uploads/2017/05/tratamento-de-hipertensao-arterial-1024x410.png);
 }
 
-section.module.parallax-2{
-    background-image: url(https://fesaude-bucket.s3.amazonaws.com/black_doctor_checking_measuring_pressure_pregnant_patient_copiar_39dab5ba7f.jpg)
-}
-
-section.module.parallax-3{
-    background-image: url(https://www.mdsaude.com/wp-content/uploads/hipertensao-risco-1200x678.jpg)
-}
-
 section.module.parallax h1{
     color: #fff;
     text-align: center;
     font-size: 80px;    
 }
 
-
+/*Deixa baixo*/
 
 #supportButton {
   position: fixed;
@@ -224,37 +216,6 @@ section.module.parallax h1{
 #closeChat:hover{
   transform: scale(1.02);
   color: #C1121F;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-top: 20px;
-  z-index: 99;
-}
-
-.social-icons .icon {
-  font-size: 30px;
-  color: white !important;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.social-icons .icon:hover {
-  transform: scale(1.2);
-}
-
-.social-icons .whatsapp:hover {
-  color: #25D366 !important;
-}
-
-.social-icons .instagram:hover {
-  color: #E1306C !important;
-}
-
-.teams:hover {
-  color: #464EB8 !important;
 }
 
 .menu-btn {
